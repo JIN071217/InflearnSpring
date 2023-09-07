@@ -69,8 +69,8 @@ public class ValidationItemControllerV1 {
         }
 
         //검증에 실패하면 다시 입력 폼으로
-        log.info("errors = {}", errors);
         if (!errors.isEmpty()) {
+            log.info("errors = {}", errors);
             model.addAttribute("errors", errors);
             return "validation/v1/addForm";
         }
