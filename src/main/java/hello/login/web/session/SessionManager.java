@@ -1,5 +1,7 @@
 package hello.login.web.session;
 
+import org.springframework.context.annotation.Configuration;
+
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -8,6 +10,7 @@ import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
+@Configuration
 public class SessionManager {
 
     public static final String SESSION_COOKIE_NAME = "mySessionId";
