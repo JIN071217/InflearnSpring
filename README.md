@@ -1,4 +1,4 @@
-﻿# SpirngMVC2-Cookie-Session
+﻿# SpirngMVC2-Cookie-Session, Filter-Interface
 
 ## 로그인 요구사항
 * 홈 화면 - 로그인 전
