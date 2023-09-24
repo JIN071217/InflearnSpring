@@ -2,6 +2,7 @@ package hello.typeconverter.converter;
 
 import hello.typeconverter.type.IpPort;
 import org.assertj.core.api.Assertions;
+import org.assertj.core.api.AssertionsForClassTypes;
 import org.junit.jupiter.api.Test;
 
 public class ConverterTest {
@@ -33,6 +34,6 @@ public class ConverterTest {
         StringIpPortConverter converter = new StringIpPortConverter();
         String source = "127.0.0.1:8090";
         IpPort result = converter.convert(source);
-        Assertions.assertThat(result).isEqualTo(new IpPort("127.0.0.1", 8090));
+        AssertionsForClassTypes.assertThat(result).isEqualTo(new IpPort("127.0.0.1", 8090));
     }
 }
