@@ -16,8 +16,8 @@ public class WebConfig implements WebMvcConfigurer {
         /**
          * String, Integer 스프링 내부에서 타입컨버터 제공
          */
-//        registry.addConverter(new StringToIntegerConverter());
-//        registry.addConverter(new IntegerToStringConverter());
+        registry.addConverter(new StringToIntegerConverter());
+        registry.addConverter(new IntegerToStringConverter());
         registry.addConverter(new StringIpPortConverter());
         registry.addConverter(new IpPortToStringConverter());
     }
