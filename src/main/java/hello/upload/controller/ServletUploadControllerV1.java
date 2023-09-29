@@ -1,7 +1,6 @@
 package hello.upload.controller;
 
 import jakarta.servlet.ServletException;
-import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.Part;
 import lombok.extern.slf4j.Slf4j;
@@ -16,7 +15,7 @@ import java.util.Collection;
 @Slf4j
 @Controller
 @RequestMapping("/servlet/v1")
-public class ServletUploadController {
+public class ServletUploadControllerV1 {
 
     @GetMapping("/upload")
     public String newFile() {
