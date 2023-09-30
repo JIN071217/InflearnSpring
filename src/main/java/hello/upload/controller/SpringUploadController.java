@@ -34,6 +34,12 @@ public class SpringUploadController {
         log.info("itemName={}", itemName);
         log.info("multiPartFile={}", file);
 
+        /**
+         * MultiPart 주요 메서드
+         * file.getOriginalFilename() : 업로드 명
+         * file.transferTo(...) : 파일 저장
+         */
+
         if (!file.isEmpty()) {
             String fullPath = fileDir + file.getOriginalFilename();
             log.info("파일 저장 fullPath={}", fullPath);
